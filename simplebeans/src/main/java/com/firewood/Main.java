@@ -8,8 +8,8 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(CounterConfiguration.class);
 
         Counter counter1 = context.getBean(Counter.class);
-        System.out.println(counter1.getCount());
+        System.out.println(counter1.getCount()); // 0
         Counter counter2 = context.getBean(Counter.class);
-        System.out.println(counter2.getCount());
+        System.out.println(counter2.getCount()); // 1
     }
 }
